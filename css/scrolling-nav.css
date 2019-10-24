@@ -3,17 +3,26 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
+.text-bold{
+  font-weight: 500;
+}
 header {
   padding: 156px 0 100px;
 }
 
+.fade-in{
+transition: .5s;
+}
+
 section {
   padding: 150px 0; 
-  border-top: solid;
+  /*border-top: solid;
   border-bottom: solid;
   border-width: 1px !important;
 
   border-color: black !important;
+  */
 }
 
 h2{
@@ -49,7 +58,7 @@ h2{
 
 
 .box{
-  background-color: white;
+  background-color:  #6dacab;
   /*background-color:  rgb(233, 232, 232);*/ 
   margin-bottom: 1%;
   padding: 2%;
@@ -57,7 +66,7 @@ h2{
 }
 
 .box-student-testimonial{
-  background-color:  rgb(233, 232, 232);
+  background-color:  #88bdbc;
   margin: 2%;
   padding: 4%;
   
@@ -108,6 +117,8 @@ li{
   -ms-flex: 33%;
   flex: 0%;
   max-width: 100%;
+  background-color: #88bdbc;
+  padding: 1%;
 }
 
 .flex-container > div {
@@ -118,16 +129,22 @@ li{
   justify-content: center;
 }
 
-.carousel{
- max-width: 100%;
- margin: auto;
- border: white 4px;
- }
+.carousel .carousel-item img {
+  max-width: 900px;
+  min-width: auto;
+  margin: 0 auto;
+}
+
+
+
+
+
 
   iframe {
   width: 100% !important;
   height: 600px !important;
   border: 2px solid black;
+  display: block;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -138,13 +155,14 @@ li{
     flex: 100%;
     max-width: 100%;
   }
+
   .carousel{
-    max-width: 75%;
+   max-width: 75%;
    margin: auto;
    padding: 1%;
    }
-  
-  
+
+
   .flex-container > div {
     -ms-flex: 33%; /* IE10 */
     flex: 1 0 33%;
@@ -177,6 +195,8 @@ li{
     -ms-flex: 50%; /* IE10 */
     max-width: 100%;
   }
+ 
+
   .carousel{
     max-width: 80%;
    margin: auto;
@@ -210,10 +230,11 @@ ul{
 
 
 .carousel{
-  max-width: 100%;
+max-width: 100%;
  margin: auto;
  padding: 0%;
  }
+
 
 .flex-container {
   display: flex;
@@ -221,6 +242,7 @@ ul{
   -ms-flex: 100%;
   flex: 100%;
   max-width: 100%;
+
 }
   .flex-container > div {
     -ms-flex: 50%; /* IE10 */
@@ -228,13 +250,9 @@ ul{
     max-width: 50%;
     padding: 4px 4px;
     justify-content: center;
-
+    
   }
 
-  iframe {
-    width: 100% !important;
-    height: 400px !important;
-  }
   #student-7,#student-8,#student-9,#student-10,#student-11,#student-12 {
     display: none;
   }
@@ -245,18 +263,12 @@ ul{
 
 }
 
-/*
-.border{
-  border-style: solid;
-  border-width: 2px !important;
-  border-color: black !important;
-  padding: 50px;
-
-}
-*/
 
 
 /* Background Colours*/
+.bg-black{
+  background-color: #000000 !important;
+}
 
 .bg-cyan{
   background-color: #17a2b8 !important;
@@ -319,6 +331,19 @@ ul{
   background-color:  #b9f0dd !important;
 }
 
+.bg-muted-teal{
+  background-color: #88bdbc !important;
+
+}
+
+.bg-mid-green{
+background-color: #254e58 !important;
+}
+
+.bg-dark-green{
+  background-color: #112d32 !important;
+  }
+
 
 :root{
   --sky: #caebf2;
@@ -339,6 +364,10 @@ ul{
   --primaryDefault: #007bff;
   --primaryLighter: #4898ee;
   --primaryGreen: #b9f0dd;
+
+  --mutedTeal: #88bdbc;
+  --midgreen: #254e58;
+  --darkgreen: #112d32;
 }
 
 

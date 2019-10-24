@@ -7,7 +7,7 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       
-      
+      /*
       var text = this.text;
       var href = this.href;
       console.log(text,href);
@@ -19,6 +19,8 @@
         target.slideToggle(1000);           
 
       }
+
+      */
 
 
 
@@ -51,6 +53,7 @@
 
 
 
+
 })(jQuery); // End of use strict
 
 $(window).on('resize', function() {
@@ -73,4 +76,5 @@ function widthOnLoadAboutSection(){
     $('#about-text').removeClass('col-lg-10 mx-auto');
 }
 }
+
 
